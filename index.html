@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inglés 1.º Bachillerato · Apuntes interactivos</title>
+<link rel="stylesheet" href="estilos.css"></head><body>
+<nav id="nav"></nav>
+<main>
+<section id="vocab"><h2>Vocabulario</h2>
+<div class="card"><div class="row"><input type="search" id="q" placeholder="Buscar palabra…" oninput="rv()"><select id="cat" onchange="rv()"></select>
+<button class="b s" onclick="allT(true)">Mostrar todas las traducciones</button><button class="b s" onclick="allT(false)">Ocultar todas</button></div>
+<p id="pct" style="margin:10px 0 4px;font:14px system-ui"></p><div class="bar"><i id="pb"></i></div></div>
+<div class="grid" id="vg"></div>
+</section>
+
+<section id="gram"><h2>Gramática: los 8 tiempos</h2><p>Antes de elegir un tiempo, pregúntate: <b>¿cuándo ocurre la acción?</b> ¿Es hábito, está pasando ahora, terminó en el pasado, tiene relación con el presente, ocurrió antes que otra acción pasada, o es futuro?</p><div id="gd"></div>
+<h2>Tabla comparativa</h2><div class="wrap"><table id="tb"></table></div><div id="dif"></div></section>
+
+<section id="prac"><h2>Ejercicios de práctica</h2><p>Respuesta con corrección inmediata. En los huecos, escribe la forma completa (se aceptan contracciones).</p><div id="pd"></div></section>
+
+<section id="exam"><h2>Simulacro de examen</h2><div id="ed"></div></section>
+</main>
+<script src="script.js"></script></body></html>
